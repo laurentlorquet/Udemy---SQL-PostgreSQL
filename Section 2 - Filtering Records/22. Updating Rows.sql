@@ -10,3 +10,5 @@ WHERE name = "Tokyo";
 
 --now to see if the row was updated we need a new query
 SELECT * FROM cities;
+
+-- shall I try once more

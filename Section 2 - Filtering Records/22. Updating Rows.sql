@@ -12,4 +12,4 @@ WHERE name = "Tokyo";
 SELECT * FROM cities;
 ---
 -- well maybe this will work who know
--- time to merge both branches
+-- time to merge both branches. hmmmmm

@@ -19,3 +19,8 @@ SELECT * FROM photos;
 --Checking the photos on a specific user
 SELECT * FROM photos
 WHERE user_id = 4;
+
+--List all photos with details about the associated user for each
+--This is userful when you wish to display this on the homepage of an app
+SELECT url, username FROM photos
+JOIN users ON users.id = photos.user_id;

@@ -15,9 +15,9 @@ CREATE TABLE users (
 INSERT INTO users(username)
 VALUES
 	('monahan93'),
-    ('pferrer'),
-    ('si93onis'),
-    ('99stroman');
+  ('pferrer'),
+  ('si93onis'),
+  ('99stroman');
 
 --Feel free to check
 SELECT * FROM users;

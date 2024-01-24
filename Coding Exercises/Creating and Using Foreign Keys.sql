@@ -33,7 +33,7 @@ CREATE TABLE crew_members (
     -- so 'AUTOINCREMENT' is used instead. Postgres always uses 'SERIAL'
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     first_name VARCHAR,
-    -- >>>>>>>> TODO #1 HERE!!!
+    boat_id INTEGER REFERENCES boats(id)
     
 );
 
@@ -42,5 +42,7 @@ INSERT INTO crew_members (first_name, boat_id)
 VALUES ('Alex', 1), ('Lucia', 1), ('Ari', 2);
 
 
--- Write query here to fetch all columns for all crew_members associated with the boat that has an ID of 1
--- >>>>>>>> TODO #2 HERE!!!
+-- Write query here to fetch all columns for all crew_members
+-- associated with the boat that has an ID of 1
+SELECT * FROM crew_members
+WHERE boat_id = 1;
